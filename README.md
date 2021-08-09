@@ -16,7 +16,7 @@ This is a Todo-like book management app to showcase the skills we have acquired 
 
 ## Live Demo
 
-[Live Demo Link](https://henrykc24.github.io/my-portfolio/)
+[Live Demo Link](https://aliabbani.github.io/Awesome-book/)
 
 
 ## Getting Started
@@ -46,6 +46,9 @@ The app is deployed using GitHub pages. You can view it using the 'live demo' ab
 - LinkedIn: [LinkedIn](https://linkedin.com/in/henry-kc)
 
 ## Ali's Profile
+- GitHub: [@githubhandle](https://github.com/aliabbani)
+- Twitter: [@twitterhandle](https://twitter.com/aliabbani)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ali-abbani-8b6246150/)
 
 ## 🤝 Contributing
 
