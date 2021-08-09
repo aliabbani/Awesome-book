@@ -1,7 +1,6 @@
 MIT License
 
-Copyright (c) 2021 henry-kc
-Copyright (c) 2021 aliabbani
+Copyright (c) 2021 henry-kc, 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
