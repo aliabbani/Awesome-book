@@ -1,29 +1,19 @@
-let bookList = [
- 
-];
+let bookList = [];
 
-const addNewBook = () => {
-  const title = document.querySelector('.title').value;
-  const author = document.querySelector('.author').value;
-  const book = {
-    title,
-    author,
-  };
-  bookList.push(book);
-  saveDataLocally();
-  generateBooks();
+const saveDataLocally = (bookList) => {
+  const stringifiedBookList = JSON.stringify(bookList);
+  localStorage.setItem('bookList', stringifiedBookList);
 };
 
 const removeBook = (index) => {
   bookList = bookList.filter((book, ind) => ind !== index);
-  saveDataLocally();
-  generateBooks();
 };
 
 const listShowContainer = document.querySelector('.listShow');
 
 const generateBooks = () => {
   listShowContainer.innerHTML = '';
+
   bookList.forEach((bookObject, index) => {
     const div = document.createElement('div');
     div.className = 'book';
@@ -48,7 +38,8 @@ const generateBooks = () => {
     removeButton.textContent = 'Remove';
     removeButton.addEventListener('click', () => {
       removeBook(index);
-      console.log(bookList);
+      saveDataLocally(bookList);
+      generateBooks();
     });
     div.appendChild(removeButton);
 
@@ -60,18 +51,26 @@ const generateBooks = () => {
   });
 };
 
-generateBooks();
-
-if(localStorage.getItem('bookList')) {
-    const localBookList = localStorage.getItem('bookList');
-    const convertedBookList = JSON.parse(localBookList);
-    bookList = convertedBookList;
+if (localStorage.getItem('bookList') !== null) {
+  const localBookList = localStorage.getItem('bookList');
+  const convertedBookList = JSON.parse(localBookList);
+  bookList = convertedBookList;
+  generateBooks();
+} else {
+  generateBooks();
 }
+
+const addNewBook = (bookList) => {
+  const title = document.querySelector('.title').value;
+  const author = document.querySelector('.author').value;
+  const book = {
+    title,
+    author,
+  };
+  bookList.push(book);
+  saveDataLocally(bookList);
+  generateBooks();
+};
 
 const addButton = document.querySelector('.add');
-addButton.addEventListener('click', addNewBook);
-
-const saveDataLocally = () => {
-    const stringifiedBookList = JSON.stringify(bookList);
-    localStorage.setItem('bookList', stringifiedBookList);
-}
+addButton.addEventListener('click', () => addNewBook(bookList));
