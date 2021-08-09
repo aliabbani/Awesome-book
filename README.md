@@ -16,7 +16,7 @@ This is a Todo-like book management app to showcase the skills we have acquired 
 
 ## Live Demo
 
-[Live Demo Link](https://aliabbani.github.io/Awesome-book/)
+[Live Demo Link](https://naughty-jackson-467756.netlify.app/)
 
 
 ## Getting Started
