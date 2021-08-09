@@ -14,7 +14,7 @@ const listShowContainer = document.querySelector('.listShow');
 const generateBooks = () => {
   listShowContainer.innerHTML = '';
 
-  bookList.forEach((bookObject, index) => {
+  bookList.reverse().forEach((bookObject, index) => {
     const div = document.createElement('div');
     div.className = 'book';
 
