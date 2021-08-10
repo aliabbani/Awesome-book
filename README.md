@@ -37,14 +37,14 @@ The app is deployed using GitHub pages. You can view it using the 'live demo' ab
 
 
 
-## Author
-👤 **Ali Abbani**
+## Authors
 👤 **Henry Kc**
 ## Henry's Profile
 - GitHub: [@githubhandle](https://github.com/henrykc24)
 - Twitter: [@twitterhandle](https://twitter.com/henrykc24)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/henry-kc)
 
+👤 **Ali Abbani**
 ## Ali's Profile
 - GitHub: [@githubhandle](https://github.com/aliabbani)
 - Twitter: [@twitterhandle](https://twitter.com/aliabbani)
