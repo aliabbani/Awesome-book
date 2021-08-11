@@ -31,3 +31,40 @@ body {
   flex-direction: column;
   gap: 2vh;
 }
+
+.title,
+.author {
+  width: 60vw;
+  height: 25px;
+}
+
+.add {
+  align-self: flex-end;
+}
+
+.grey-background {
+  background-color: #ddd;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 2vw;
+}
+
+.remove-button {
+  border: solid black;
+  box-shadow: 2px 2px black;
+}
+
+@media screen and (min-width: 768px) {
+  .title,
+  .author {
+    width: 30vw;
+  }
+
+  body {
+    padding: 0 5vw;
+  }
+}
