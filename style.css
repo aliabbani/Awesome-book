@@ -1,5 +1,33 @@
 body {
   margin: 0;
-  padding: 0;
-  background-color: white;
+  padding: 1vw;
+  font-family: sans-serif;
+}
+
+.all-books h1 {
+  text-align: center;
+}
+
+.listShow {
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.horizontal-line1 {
+  width: 30vw;
+}
+
+/* section: add book */
+.add-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-book {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
