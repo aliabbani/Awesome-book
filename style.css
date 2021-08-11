@@ -2,3 +2,39 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.all-books h1 {
+  text-align: center;
+}
+
+.listShow {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-line1 {
+  width: 30vw;
+}
+
+/* section: add book*/
+.add-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-book {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.title,
+.author {
+  width: 60vw;
+}
+
+.add {
+  align-self: flex-end;
+}
