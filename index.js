@@ -33,16 +33,6 @@ class Booklet {
       titleSpan.textContent = bookObject.title;
       div.appendChild(titleSpan);
 
-      const br = document.createElement('br');
-      div.appendChild(br);
-
-      const authorSpan = document.createElement('span');
-      authorSpan.className = 'book-author';
-      authorSpan.textContent = bookObject.author;
-      div.appendChild(authorSpan);
-      const br2 = document.createElement('br');
-      div.appendChild(br2);
-
       const removeButton = document.createElement('button');
       removeButton.className = 'remove-button';
       removeButton.textContent = 'Remove';
@@ -51,11 +41,8 @@ class Booklet {
         this.saveDataLocally(this.bookList);
         this.generateBooks();
       });
+      
       div.appendChild(removeButton);
-
-      const hr = document.createElement('hr');
-      hr.className = 'rule';
-      div.appendChild(hr);
       parentElement.appendChild(div);
     });
   };
