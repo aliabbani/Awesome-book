@@ -51,9 +51,11 @@ class Booklet {
     });
 
     if (this.bookList.length === 0) {
-      document.querySelector('.listShow').classList.add('hide');
+      document.querySelector('.all-books').classList.add('hide');
+      document.querySelector('.horizontal-line1').classList.add('hide');
     } else {
-      document.querySelector('.listShow').classList.remove('hide');
+      document.querySelector('.all-books').classList.remove('hide');
+      document.querySelector('.horizontal-line1').classList.remove('hide');
     }
   };
 
