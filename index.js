@@ -30,7 +30,7 @@ class Booklet {
 
       const titleSpan = document.createElement('span');
       titleSpan.className = 'book-title';
-      titleSpan.textContent = bookObject.title;
+      titleSpan.textContent = `"${bookObject.title}" by ${bookObject.author}`;
       div.appendChild(titleSpan);
 
       const removeButton = document.createElement('button');
@@ -41,10 +41,20 @@ class Booklet {
         this.saveDataLocally(this.bookList);
         this.generateBooks();
       });
-      
+
       div.appendChild(removeButton);
       parentElement.appendChild(div);
+
+      if (index % 2 !== 0) {
+        div.classList.add('grey-background');
+      };
     });
+
+    if (this.bookList.length === 0) {
+      document.querySelector('.listShow').classList.add('hide');
+    } else {
+      document.querySelector('.listShow').classList.remove('hide');
+    }
   };
 
   saveDataLocally = (bookList) => {

@@ -46,6 +46,10 @@ body {
   background-color: #ddd;
 }
 
+.hide {
+  display: none;
+}
+
 .book {
   display: flex;
   justify-content: space-between;
