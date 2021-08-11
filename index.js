@@ -47,7 +47,7 @@ class Booklet {
 
       if (index % 2 !== 0) {
         div.classList.add('grey-background');
-      };
+      }
     });
 
     if (this.bookList.length === 0) {
