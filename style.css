@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 1vw;
+  font-family: sans-serif;
 }
 
 .all-books h1 {
@@ -8,7 +9,7 @@ body {
 }
 
 .listShow {
-  border: 1px solid black;
+  border: 3px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -17,7 +18,7 @@ body {
   width: 30vw;
 }
 
-/* section: add book*/
+/* section: add book */
 .add-books {
   display: flex;
   flex-direction: column;
@@ -37,4 +38,20 @@ body {
 
 .add {
   align-self: flex-end;
+}
+
+.grey-background {
+  background-color: #ddd;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 2vw;
+}
+
+.remove-button {
+  border: solid black;
+  box-shadow: 2px 2px black;
 }
