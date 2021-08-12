@@ -52,10 +52,8 @@ class Booklet {
 
     if (this.bookList.length === 0) {
       document.querySelector('.all-books').classList.add('hide');
-      document.querySelector('.horizontal-line1').classList.add('hide');
     } else {
       document.querySelector('.all-books').classList.remove('hide');
-      document.querySelector('.horizontal-line1').classList.remove('hide');
     }
   };
 
@@ -82,6 +80,8 @@ class Booklet {
 }
 
 const allBooks = new Booklet(document.querySelector('.listShow'));
-allBooks.generateBooks();
-allBooks.checkLocalStorage();
-allBooks.addListener();
+if (allBooks) {
+  allBooks.generateBooks();
+  allBooks.checkLocalStorage();
+  allBooks.addListener();
+}
