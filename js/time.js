@@ -1,3 +1,4 @@
+
 const getTime = () => {
   const getOrdinal = (param) => {
     param = Number(param).toString();
@@ -32,7 +33,7 @@ const getTime = () => {
     return pmAm;
   };
 
-  const { DateTime } = luxon.DateTime;
+  var DateTime = luxon.DateTime;
   const dt = DateTime.now();
   const x = dt.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
 
