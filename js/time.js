@@ -43,7 +43,7 @@ const getTime = () => {
   hr = hr > 11 ? hr - 12 : hr;
   time = `${hr}:${min}:${sec}`;
 
-  const wantedTimeDate = `${month} ${day}${getOrdinal(
+  let wantedTimeDate = `${day} ${month.slice(0,2)}${getOrdinal(
     day.toString(),
   )} ${year} ${time} ${amPm(day)}`;
   return wantedTimeDate;
