@@ -24,6 +24,8 @@ class Booklet {
     this.generateBooks();
     document.querySelector('.title').value = '';
     document.querySelector('.author').value = '';
+    document.querySelector('.add-books').style.display = 'none';
+    document.querySelector('.all-books').style.display = 'block';
     return false;
   };
 
