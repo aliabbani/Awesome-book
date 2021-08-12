@@ -41,14 +41,19 @@ const getTime = () => {
 
   const temp = day;
   if (day.length > 2) {
-    day = month;
     month = temp;
   }
+
   const [, min, sec] = time.split(':');
   let [hr] = time.split(':');
   hr = hr > 11 ? hr - 12 : hr;
   time = `${hr}:${min}:${sec}`;
-
+  if (month.length === 3) {
+    month = month.replace(/,/g, '');
+  }
+  if (day.length === 3) {
+    day = day.replace(/,/g, '');
+  }
   const wantedTimeDate = `${month} ${day}${getOrdinal(
     day.toString(),
   )} ${year} ${time} ${amPm(day)}`;
