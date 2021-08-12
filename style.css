@@ -63,6 +63,24 @@ body {
   box-shadow: 2px 2px black;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border: solid black;
+  margin-top: 10px;
+  padding: 2vh 2vw;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2vw;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black;
+}
+
 @media screen and (min-width: 768px) {
   .title,
   .author {
