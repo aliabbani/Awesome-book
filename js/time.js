@@ -1,4 +1,3 @@
-
 const getTime = () => {
   const getOrdinal = (param) => {
     param = Number(param).toString();
@@ -33,17 +32,24 @@ const getTime = () => {
     return pmAm;
   };
 
-  var DateTime = luxon.DateTime;
+  const { DateTime } = luxon;
   const dt = DateTime.now();
   const x = dt.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
 
-  let [day, month, year, time] = x.split(' ');
+  let [day, month, , time] = x.split(' ');
+  const [, , year] = x.split(' ');
 
-  let [hr, min, sec] = time.split(':');
+  const temp = day;
+  if (day.length > 2) {
+    day = month;
+    month = temp;
+  }
+  const [, min, sec] = time.split(':');
+  let [hr] = time.split(':');
   hr = hr > 11 ? hr - 12 : hr;
   time = `${hr}:${min}:${sec}`;
 
-  let wantedTimeDate = `${day} ${month.slice(0,2)}${getOrdinal(
+  const wantedTimeDate = `${month} ${day}${getOrdinal(
     day.toString(),
   )} ${year} ${time} ${amPm(day)}`;
   return wantedTimeDate;
