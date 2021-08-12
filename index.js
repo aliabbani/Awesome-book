@@ -11,6 +11,10 @@ class Booklet {
   addNewBook = (bookList) => {
     const title = document.querySelector('.title').value;
     const author = document.querySelector('.author').value;
+    if ((title === '') || (author === '')) {
+      document.querySelector('.error').textContent = 'Please add book title and author name';
+      return false;
+    }
     const book = {
       title,
       author,
@@ -18,6 +22,22 @@ class Booklet {
     this.bookList.unshift(book);
     this.saveDataLocally(bookList);
     this.generateBooks();
+    document.querySelector('.title').value = '';
+    document.querySelector('.author').value = '';
+    return false;
+  };
+
+  removeErrorMessage = () => {
+    const title = document.querySelector('.title');
+    const author = document.querySelector('.author');
+
+    title.addEventListener('focus', () => {
+      document.querySelector('.error').textContent = '';
+    });
+    author.addEventListener('focus', () => {
+      document.querySelector('.error').textContent = '';
+    });
+    return false;
   };
 
   generateBooks = () => {
@@ -85,3 +105,5 @@ if (allBooks) {
   allBooks.checkLocalStorage();
   allBooks.addListener();
 }
+
+allBooks.removeErrorMessage();
