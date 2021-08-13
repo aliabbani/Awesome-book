@@ -12,18 +12,27 @@ listNav.addEventListener('click', () => {
   addBooks.style.display = 'none';
   contactBox.style.display = 'none';
   book.style.display = 'block';
+  document.querySelector('.nav-items .add-new').style.color = 'black';
+  document.querySelector('.nav-items .contact').style.color = 'black';
+  document.querySelector('.nav-items .list').style.color = 'rgb(59, 59, 219)';
 });
 
 addNewNav.addEventListener('click', () => {
   book.style.display = 'none';
   contactBox.style.display = 'none';
   addBooks.style.display = 'flex';
+  document.querySelector('.nav-items .add-new').style.color = 'rgb(59, 59, 219)';
+  document.querySelector('.nav-items .contact').style.color = 'black';
+  document.querySelector('.nav-items .list').style.color = 'black';
 });
 
 contactNav.addEventListener('click', () => {
   addBooks.style.display = 'none';
   book.style.display = 'none';
   contactBox.style.display = 'flex';
+  document.querySelector('.nav-items .add-new').style.color = 'black';
+  document.querySelector('.nav-items .contact').style.color = 'rgb(59, 59, 219)';
+  document.querySelector('.nav-items .list').style.color = 'black';
 });
 
 if (listShow1.innerHTML === '') {
