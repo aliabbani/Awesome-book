@@ -20,6 +20,10 @@ body {
   margin: 0;
 }
 
+.nav-items .list {
+  color: rgb(59, 59, 219);
+}
+
 .horizontal-line1 {
   width: 30vw;
   margin-top: 5vh;
