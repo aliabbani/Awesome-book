@@ -4,7 +4,7 @@
 
 > Building A Library-like Books Management App
 
-![screenshot](./assets/images/app_screenshot.png)
+![screenshot](./assets/images/capture.PNG)
 
 This is a Todo-like book management app to showcase the skills we have acquired in JavaScript Object Oriented Programmin.
 
@@ -16,7 +16,7 @@ This is a Todo-like book management app to showcase the skills we have acquired 
 
 ## Live Demo
 
-[Live Demo Link](https://stoic-fermat-ddc346.netlify.app/)
+[Live Demo Link](https://musing-minsky-1c53a0.netlify.app)
 
 
 ## Getting Started
