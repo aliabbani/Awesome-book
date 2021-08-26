@@ -4,7 +4,7 @@
 
 > Building A Library-like Books Management App
 
-![screenshot](./assets/images/capture.PNG)
+![screenshot](./assets/images/Capture.PNG)
 
 This is a Todo-like book management app to showcase the skills we have acquired in JavaScript Object Oriented Programmin.
 
